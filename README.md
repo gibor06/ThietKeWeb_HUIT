@@ -1,7 +1,6 @@
 # 🌐 Web Design Learning
 
-Repository này được tạo ra trong quá trình mình **học môn Thiết Kế Web**.
-Mục tiêu là lưu lại các bài thực hành, ví dụ và project nhỏ trong quá trình học **HTML, CSS và JavaScript**.
+**Web Design Learning** là repository được tạo ra trong quá trình mình **học môn Thiết Kế Web**, với mục tiêu lưu lại các **bài thực hành, ví dụ và project nhỏ** trong quá trình học **HTML, CSS và JavaScript**.
 
 Thông qua repository này, mình luyện tập cách:
 
@@ -9,6 +8,8 @@ Thông qua repository này, mình luyện tập cách:
 * Thiết kế bố cục trang web
 * Tạo hiệu ứng tương tác bằng JavaScript
 * Áp dụng kiến thức vào các project thực tế
+
+Repository này phù hợp với sinh viên và người mới bắt đầu học lập trình web, đặc biệt là những ai muốn xây dựng nền tảng vững chắc về **front-end web development** thông qua các bài tập và ví dụ cơ bản.
 
 ---
 
@@ -77,6 +78,25 @@ Các công nghệ được sử dụng trong quá trình học:
 * **Visual Studio Code**
 * **Git & GitHub**
 
+---
+
+# 📂 Cấu trúc repository
+
+```text
+web-design-learning
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+| File | Mô tả |
+| --- | --- |
+| `index.html` | File giao diện chính của website |
+| `style.css` | File thiết kế giao diện và bố cục |
+| `script.js` | File xử lý tương tác và hiệu ứng JavaScript |
+| `README.md` | File mô tả tổng quan repository |
 
 ---
 
@@ -88,7 +108,7 @@ Các project trong repository là **website tĩnh**, nên có thể chạy rất
 
 Mở file:
 
-```
+```text
 index.html
 ```
 
@@ -114,15 +134,27 @@ Sử dụng **Live Server trong VS Code**
 
 * Nắm vững kiến thức **thiết kế web cơ bản**
 * Xây dựng các **project web cá nhân**
+* Luyện tập kỹ năng **HTML, CSS và JavaScript**
 * Tạo nền tảng cho **Web Development chuyên sâu**
+* Lưu lại quá trình học tập để làm tài liệu tham khảo sau này
 
 ---
 
 # 👨‍💻 Tác giả
 
-**Trần Gia Bảo**
+**Trần Gia Bảo** - **gibor06**
 
-Sinh viên ngành **Công Nghệ Thông Tin**
+Sinh viên ngành **Công Nghệ Thông Tin** - **Trường Đại học Công Thương TP.HCM (HUIT)**
+
+📍 TP.HCM, Việt Nam
+
+# 📬 Liên hệ
+
+📧 Email:  
+[gibor06.dev@gmail.com](mailto:gibor06.dev@gmail.com)
+
+🌐 Facebook:  
+https://www.facebook.com/gibor06
 
 ---
 
