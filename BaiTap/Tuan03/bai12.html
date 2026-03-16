@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hộp Thư Góp Ý</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        width: 450px;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Tiêu đề màu xanh Cyan */
+      .header {
+        background-color: #00d4ff;
+        color: black;
+        text-align: center;
+        padding: 15px;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .form-body {
+        padding: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #999;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+
+      textarea {
+        height: 100px;
+        resize: vertical;
+      }
+
+      /* Group cho checkbox và radio */
+      .options-group {
+        display: flex;
+        gap: 15px;
+        font-weight: normal;
+        align-items: center;
+      }
+
+      .options-group label {
+        font-weight: normal;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 0;
+        cursor: pointer;
+      }
+
+      /* Nút bấm */
+      .button-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .btn {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        color: black;
+      }
+
+      .btn-submit {
+        background-color: #00d4ff;
+      }
+
+      .btn-clear {
+        background-color: red;
+        color: black;
+      }
+
+      .btn:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Hộp Thư Góp Ý</div>
+
+      <form class="form-body">
+        <div class="form-group">
+          <label>Họ Tên</label>
+          <input type="text" />
+        </div>
+
+        <div class="form-group">
+          <label>Hộ Khẩu</label>
+          <select>
+            <option>TP. Hồ Chí Minh</option>
+            <option>Hà Nội</option>
+            <option>Đà Nẵng</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Góp ý về lĩnh vực</label>
+          <div class="options-group">
+            <label><input type="checkbox" /> Dịch vụ</label>
+            <label><input type="checkbox" /> Sản Phẩm</label>
+            <label><input type="checkbox" /> Khác</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Ngôn Ngữ</label>
+          <div class="options-group">
+            <label><input type="radio" name="lang" /> Anh</label>
+            <label><input type="radio" name="lang" /> Việt</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Nội Dung</label>
+          <textarea placeholder="Nội dung góp ý"></textarea>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn btn-submit">GỬI</button>
+          <button type="reset" class="btn btn-clear">XÓA</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

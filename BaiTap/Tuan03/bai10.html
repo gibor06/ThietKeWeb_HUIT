@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 10 tuần 3</title>
+    <style>
+      :root {
+        --primary-red: #ed1c24;
+        --border-color: #ddd;
+        --text-gray: #555;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        color: #333;
+      }
+      .container {
+        background: white;
+        width: 650px;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      /* Tabs Chọn địa chỉ & Thanh toán */
+      .flex-row {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+      .tab-item {
+        flex: 1;
+        border: 1px solid var(--border-color);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .tab-item.active {
+        border-color: var(--primary-red);
+        color: var(--primary-red);
+      }
+      .tab-item img {
+        width: 24px;
+        margin-right: 10px;
+      }
+
+      /* Form Fields */
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 15px;
+      }
+      .input-group {
+        position: relative;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        padding: 5px 10px;
+      }
+      .input-group label {
+        position: absolute;
+        top: -8px;
+        left: 10px;
+        background: white;
+        padding: 0 5px;
+        font-size: 11px;
+        color: #888;
+      }
+      .input-group input,
+      .input-group select {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 5px 0;
+        font-size: 13px;
+      }
+      .required {
+        color: red;
+      }
+
+      /* Checkbox & Textarea */
+      .checkbox-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        margin: 15px 0;
+      }
+      textarea {
+        width: 100%;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        padding: 10px;
+        height: 80px;
+        box-sizing: border-box;
+      }
+
+      /* Nút Thanh Toán */
+      .btn-submit {
+        background-color: var(--primary-red);
+        color: white;
+        width: 100%;
+        border: none;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .policy-box {
+        border: 1px solid var(--primary-red);
+        padding: 10px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Chọn địa chỉ nhận hàng</h3>
+      <div class="flex-row">
+        <div class="tab-item active">
+          <span> NHẬN HÀNG TẠI NHÀ</span>
+          <input type="radio" checked name="vanchuyen" />
+        </div>
+        <div class="tab-item">
+          <span> NHẬN HÀNG TẠI TRUNG TÂM</span>
+          <input type="radio" name="vanchuyen" />
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="input-group">
+          <label>Họ và tên <span class="required">(*)</span></label>
+          <input type="text" />
+        </div>
+        <div class="input-group">
+          <label>Số điện thoại <span class="required">(*)</span></label>
+          <input type="text" />
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="input-group">
+          <label>Email</label>
+          <input type="text" />
+        </div>
+        <div class="input-group">
+          <label>Tỉnh / Thành Phố <span class="required">(*)</span></label>
+          <select>
+            <option>Chọn tỉnh/Thành phố của bạn</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="input-group">
+          <label>Quận / Huyện <span class="required">(*)</span></label>
+          <select>
+            <option>Chọn Quận/Huyện</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label>Phường / Xã <span class="required">(*)</span></label>
+          <select>
+            <option>Chọn Phường / Xã</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-group" style="margin-bottom: 15px">
+        <label>Số nhà / Tên đường <span class="required">(*)</span></label>
+        <input type="text" />
+      </div>
+
+      <div class="checkbox-row">
+        <input type="checkbox" checked /> Sử dụng thông tin này để đăng ký tài
+        khoản mua hàng
+      </div>
+
+      <div class="input-group">
+        <label>Để lại lời nhắn cho Nguyễn Kim</label>
+        <textarea></textarea>
+      </div>
+
+      <h3 style="margin-top: 25px">Chọn hình thức thanh toán</h3>
+      <div class="flex-row">
+        <div class="tab-item active">
+          <span>Thanh toán khi nhận hàng</span>
+          <input type="radio" checked name="thanhtoan" />
+        </div>
+        <div class="tab-item">
+          <span>Thẻ ATM/Internet banking</span>
+          <input type="radio" name="thanhtoan" />
+        </div>
+        <div class="tab-item">
+          <span>Thẻ tín dụng</span>
+          <input type="radio" name="thanhtoan" />
+        </div>
+      </div>
+
+      <div class="policy-box">
+        <input type="checkbox" />
+        <span>Bạn muốn xử dụng lắp đặt</span>
+      </div>
+
+      <div class="policy-box">
+        <input type="checkbox" checked />
+        <span
+          >Tôi đồng ý
+          <a href="#" style="color: var(--primary-red)"
+            >thoả thuận bảo mật và chính sách mua hàng</a
+          ></span
+        >
+      </div>
+
+      <div class="policy-box">
+        <input type="checkbox" />
+        <span>Yêu cầu xuất hóa đơn GTGT cho đơn hàng này</span>
+      </div>
+
+      <button class="btn-submit">THANH TOÁN <span>❯</span></button>
+    </div>
+  </body>
+</html>

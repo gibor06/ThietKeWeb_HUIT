@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 1 tuần 03</title>
+  </head>
+  <body>
+    <h1>Bài 1 tuần 03: Học về các thẻ hình ảnh, video, audio</h1>
+    <img
+      src="nen.jpg"
+      alt="ảnh nền laptop topia2"
+      height="150px"
+      width="300px"
+    />
+    <hr />
+    <p>Audio phép màu của Nguyễn Hùng:</p>
+    <audio
+      src="phepmau.mp3"
+      alt="Phép màu - Nguyễn Hùng"
+      controls
+      title="Phép màu - Nguyễn hùng"
+    ></audio>
+
+    <hr />
+    <p>Video nhạc 50 năm về sau remix:</p>
+    <video
+      src="50NamVeSau.mp4"
+      alt="Video nhạc chill"
+      title="50 Năm về sau"
+      controls
+      height="150"
+    ></video>
+    <hr />
+    <p>Tài liệu học tập buổi 3:</p>
+    <object data="Bai3.pdf" height="300"></object>
+    <hr />
+    <p>Bài tập 3 form:</p>
+    <form>
+      <table>
+        <tr>
+          <td colspan="2">THÔNG TIN NGƯỜI GỬI</td>
+        </tr>
+        <tr>
+          <td>* Người gửi:</td>
+          <td><input type="text" placeholder="Nhập họ và tên" /></td>
+        </tr>
+        <tr>
+          <td>* Email:</td>
+          <td><input type="email" placeholder="Nhập Email" /></td>
+        </tr>
+        <tr>
+          <td>* Điện thoại:</td>
+          <td><input type="number" placeholder="Nhập số điện thoại" /></td>
+        </tr>
+      </table>
+    </form>
+
+    <form>
+      <table>
+        <tr>
+          <td colspan="2">THÔNG TIN NGƯỜI NHẬN</td>
+        </tr>
+        <tr>
+          <td>* Người nhận:</td>
+          <td>
+            <input type="text" placeholder="Nhập họ và tên" />
+          </td>
+        </tr>
+        <tr>
+          <td>* Địa chỉ:</td>
+          <td><input type="text" placeholder="Nhập địa chỉ" /></td>
+        </tr>
+        <tr>
+          <td>* Điện thoại:</td>
+          <td><input type="number" placeholder="Nhập số điện thoại" /></td>
+        </tr>
+        <tr>
+          <td>* Tỉnh/TP</td>
+          <td>
+            <select name="provine">
+              <option value="1">TP. Hồ Chí Minh</option>
+              <option value="2">Hà Nội</option>
+              <option value="3">Huế</option>
+              <option value="4">Đà Nẵng</option>
+              <option value="5">Quảng Ninh</option>
+              <option value="6">Cần Thơ</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>* Quận</td>
+          <td>
+            <select name="provine">
+              <option value="1">Quận 1</option>
+              <option value="2">Quận 2</option>
+              <option value="3">Quận 3</option>
+              <option value="4">Tân Phú</option>
+              <option value="5">Tân Bình</option>
+              <option value="6">Thủ Đức</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <input type="button" value="Gửi thông tin" />
+    <hr />
+    <p>Bài tập 4 form:</p>
+    <form action="">
+      <p>
+        <label>Username:</label>
+        <input type="text" />
+      </p>
+      <p>
+        <label>Password:</label>
+        <input type="password" />
+      </p>
+      <p>
+        <input type="submit" value="Đăng nhập" />
+      </p>
+      <hr />
+      <p>
+        <label>Hobby</label>
+      </p>
+      <p>
+        <input type="checkbox" name="Hobby" />
+        <label>Music</label>
+        <input type="checkbox" name="Hobby" />
+        <label>Film</label>
+        <input type="checkbox" name="Hobby" />
+        <label>Sport</label>
+      </p>
+      <p>User for</p>
+      <p>
+        <input type="radio" name="userfor" />
+        <label>home</label>
+        <input type="radio" name="userfor" />
+        <label>business</label>
+        <input type="radio" name="userfor" />
+        <label>Government</label>
+        <input type="radio" name="userfor" />
+        <label>Educational Institution</label>
+        <input type="radio" name="userfor" />
+        <label>Other</label>
+      </p>
+      <hr />
+      <input type="submit" value="Gửi" />
+    </form>
+    <hr />
+  </body>
+</html>

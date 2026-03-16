@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 8 tuần 03</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+      .form-container {
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 20px;
+        width: 500px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 5px;
+        vertical-align: top;
+      }
+      .header-section {
+        color: #800080;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.1em;
+        padding: 10px 0;
+      }
+      input[type="text"],
+      input[type="password"],
+      textarea {
+        border: 1px solid #7eb4d6;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .small-input {
+        width: 60% !important;
+      }
+      textarea {
+        height: 80px;
+        resize: vertical;
+      }
+      .radio-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <table>
+          <tr>
+            <td colspan="2" class="header-section">Thông Tin Đăng Nhập</td>
+          </tr>
+          <tr>
+            <td width="35%">Tên Đăng Nhập :</td>
+            <td><input type="text" class="small-input" /></td>
+          </tr>
+          <tr>
+            <td>Mật Khẩu :</td>
+            <td><input type="password" class="small-input" /></td>
+          </tr>
+          <tr>
+            <td>Nhập Lại Mật Khẩu :</td>
+            <td><input type="password" class="small-input" /></td>
+          </tr>
+
+          <tr>
+            <td colspan="2" class="header-section">Thông Tin Cá Nhân</td>
+          </tr>
+          <tr>
+            <td>Họ Tên :</td>
+            <td><input type="text" class="small-input" /></td>
+          </tr>
+          <tr>
+            <td>Ngày Sinh :</td>
+            <td>
+              <input type="date" />
+            </td>
+          </tr>
+          <tr>
+            <td>Giới Tính :</td>
+            <td class="radio-group">
+              <input type="radio" name="gender" id="nam" />
+              <label for="nam">Nam</label>
+              <input type="radio" name="gender" id="nu" />
+              <label for="nu">Nữ</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Địa Chỉ :</td>
+            <td><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>Số Điện Thoại :</td>
+            <td><input type="number" class="small-input" /></td>
+          </tr>
+          <tr>
+            <td>Sở Thích :</td>
+            <td><textarea></textarea></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

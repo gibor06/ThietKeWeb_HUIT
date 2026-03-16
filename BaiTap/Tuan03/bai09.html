@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 9 tuần 03</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .form-wrapper {
+        background-color: #ffd700; /* Màu nền vàng */
+        background-image: url("https://www.transparenttextures.com/patterns/water-drops.png"); /* Hiệu ứng giọt nước */
+        width: 700px;
+        padding: 20px;
+        border: 1px solid #999;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      }
+      h2 {
+        color: red;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      table {
+        width: 100%;
+      }
+      td {
+        padding: 5px;
+        color: blue;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        border: 1px solid #7eb4d6;
+        padding: 3px;
+      }
+      .full-width {
+        width: 90%;
+      }
+      .short-width {
+        width: 80px;
+      }
+
+      .radio-group {
+        color: black;
+        font-weight: normal;
+      }
+      .btn-container {
+        text-align: center;
+        margin-top: 15px;
+      }
+      .footer-text {
+        color: red;
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        margin-top: 10px;
+        display: block;
+      }
+      button {
+        padding: 5px 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <h2>Thông Tin Khách Hàng</h2>
+      <form>
+        <table>
+          <tr>
+            <td width="20%">Tên Khách Hàng:</td>
+            <td colspan="3"><input type="text" class="full-width" /></td>
+          </tr>
+          <tr>
+            <td>Tình Trạng:</td>
+            <td width="40%">
+              <select style="width: 180px">
+                <option>Khách Hàng Mới</option>
+                <option>Khách Hàng Thành Viên</option>
+                <option>Khách Hàng VIP</option>
+              </select>
+            </td>
+            <td width="15%">Mã KH:</td>
+            <td><input type="text" class="short-width" /></td>
+          </tr>
+          <tr>
+            <td>Chọn Khu:</td>
+            <td colspan="3" class="radio-group">
+              <input type="radio" name="khu" id="ks" />
+              <label for="ks">Khách Sạn</label>
+              <input type="radio" name="khu" id="kr" />
+              <label for="kr">Karaoke</label>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="3">
+              Số Phòng: <input type="text" style="width: 150px" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="3" class="radio-group">
+              <input type="radio" name="khu" id="bc" />
+              <label for="bc">Bar Club</label>
+              <input type="radio" name="khu" id="cf" />
+              <label for="cf">Coffee</label>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="3">
+              Số Bàn: <input type="text" style="width: 150px" />
+            </td>
+          </tr>
+          <tr>
+            <td>Yêu Cầu:</td>
+            <td colspan="3">
+              <textarea style="width: 85%; height: 60px"></textarea>
+            </td>
+          </tr>
+        </table>
+
+        <div class="btn-container">
+          <button type="submit">GỬI THÔNG TIN</button>
+          <span class="footer-text"
+            >Quý khách vui lòng điền thông tin đầy đủ trước khi đặt món
+            ăn.!!!</span
+          >
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
